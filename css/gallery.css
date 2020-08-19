@@ -1,0 +1,93 @@
+.gallery {
+}
+
+.gallery h2 {
+    margin: 0;
+}
+
+.gallery__list {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 1rem;
+}
+
+.gallery__item {
+    position: relative;
+    /* overflow: hidden -> hidden toàn bộ element ra khỏi size của thẻ cha */
+    overflow: hidden;
+}
+
+.gallery-g1 {
+    grid-column: 1 / span 2;
+}
+
+.gallery-g6 {
+    grid-column: 3 / span 2;
+}
+
+.gallery__item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.gallery__item .gallery__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color:rgba(48, 132, 63, 0.3);
+    padding: 38px 28px;
+    text-align: right;
+
+    transition: all 0.5s;
+}
+
+.gallery__overlay h3 {
+    margin-top: 20px;
+    font-size: 1.875rem;
+    transition: all 0.5s;
+
+    transform: translateY(30px);
+}
+
+
+.gallery__overlay h3::after {
+    content: "";
+    width: 100%;
+    height: 5px;
+    display: block;
+    margin-top: 10px;
+    background-color: white;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.gallery__overlay span {
+    font-weight: 300;
+}
+
+.gallery__overlay p {
+    position: absolute;
+    bottom: 38px;
+    right: 28px;
+    font-size: 0.75rem;
+    opacity: 0;
+
+    transition: all 0.5s;
+    transform: translateY(100px);
+}
+
+.gallery__overlay:hover h3 {
+    transform: translateY(-30px);
+}
+
+.gallery__overlay:hover h3::after, 
+.gallery__overlay:hover p{
+    opacity: 1;
+    transform: translateY(0);
+}
+

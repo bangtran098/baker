@@ -1,0 +1,75 @@
+.intro {
+    display: grid;
+    /* grid-template-columns: 25% 25% 25% 25%; */
+    grid-template-columns:  repeat(4, 25%);
+
+    /* mỗi column sẽ có kích thước 1/4 nên dùng fr  */
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.intro__item {
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;    
+}
+
+.intro-text {
+    padding: 0 2rem;
+}
+
+.intro__ab1 {
+    /* 
+    3 tham số 
+    1. số line bắt đầu 
+    2. số line kết thúc 
+    3. số colunn mà item đó chiếm 
+    1--2--3--4--5 
+    |--|--|--|--| */
+    grid-column : 2 / span 2;
+    /* hoac chiếm 2 cột  grid-column: 2 / span 2 */
+}
+
+.intro__bake {
+    grid-column: 1 / 3;
+}
+
+.intro__ab4 {
+    grid-column: 3 / span 2;
+}
+
+.intro__item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.intro .intro__item:nth-child(1),
+.intro .intro__item:nth-child(8) {
+    background-color: #4e2a84;
+}
+
+.intro .intro__item:nth-child(3) { 
+    background-color: #ff0e83;
+}
+
+.intro .intro__item:nth-child(4) { 
+    background-color: #ed6498;
+}
+
+.intro .intro__item:nth-child(6) { 
+    background-color: #836eaa;
+}
+
+.intro__item h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.intro__item p {
+    font-size: 0.875rem;
+    color: #c1c1c1;
+    line-height: 1.8rem;
+}

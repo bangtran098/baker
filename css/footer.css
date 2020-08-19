@@ -1,0 +1,93 @@
+footer {
+    color: white;
+    padding-top: 40px;
+    background-color: black;
+}
+
+.footer__main {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__copy-right {
+    text-align: center;
+}
+
+.footer__item {
+    width: 25%;
+    padding: 0 20px;
+}
+
+.footer__item h3 {
+    font-size: 1.3rem;
+    color: #ff0e83;
+    margin-bottom: 1rem;
+}
+
+.footer__item p {
+    font-size: 0.8rem;
+    line-height: 26px;
+    padding-bottom: 1rem;
+}
+
+.footer__item .footer__item-socials i{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    margin-right: 10px;
+    border: 1px solid white;
+    transition: all 0.3s;
+}
+
+.footer__item .footer__item-socials i:hover {
+    color: #ff0e83;
+    border-color: #ff0e83;
+}
+
+.footer__time{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dotted white;
+}
+
+.footer__time p {
+    padding: 0;
+    margin: 10px 0;
+}
+
+.footer__item form input {
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.footer__item form input:focus {
+    outline: none;
+}
+
+.footer__item button {
+    padding: 7px 16px;
+    margin-bottom: 24px;
+    color: black;
+    border-color: #ff0e83;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.footer__item button:hover {
+    border-color: black;
+}
+
+.footer__copy-right { 
+    padding-bottom: 30px;
+    font-size: 0.8rem;
+}
+
+.footer__copy-right span {
+    color: #ff0e83;
+}

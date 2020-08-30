@@ -16,3 +16,63 @@ button:hover {
     border: 1px solid #ff0e83;
     background-color: white;
 }
+
+.back_to_top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.cd-top--is-visible { 
+    visibility: visible;
+    opacity: 1;
+}
+
+.cd-top--fade-out {
+    opacity: .5;
+}
+
+.back_to_top i{
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 35px;
+    color: #0BBBCC;
+    border: 2px solid #0BBBCC;
+    border-radius: 100%;
+}
+
+/* ANIMATIONS  */
+@keyframes upDown {
+    0% {
+
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes upDown2 {
+    form {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100px);
+    }
+}
+
+@keyframes upDown3 {
+    0% {
+        transform: translateY(0);
+        background-color: red;
+    }
+    100% {
+        transform: translateY(50px);
+        background-color: yellow;
+    }
